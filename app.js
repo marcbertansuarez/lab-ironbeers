@@ -42,6 +42,6 @@ app.get('/random-beer', (req, res) => {
     res.render('random-beer', {randomBeer})
   })
   .catch(error => console.log(error));
-})
+});
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
