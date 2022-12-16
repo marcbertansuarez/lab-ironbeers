@@ -6,7 +6,11 @@
   <p>{{this.description}}</p>
   <p>{{this.tagline}}</p>
   <p>Food Pairing:</p>
-  <p>{{this.food_pairing}}</p>
+  <ul>
+  {{#each this.food_pairing}}</p>
+  <li>{{this}}</li>
+  {{/each}}
+  </ul>
   <p>{{this.brewers_tips}}</p>
 </div>
 {{/each}}
